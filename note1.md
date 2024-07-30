@@ -28,6 +28,14 @@ and $p$ is the probability of miscall.
 Hence a base that the sequencer thinks is 99.9% correct will have a $q=30$ and be encoded as character `?`.
 Depending on the sequencing technology, these quality score can be fairly reliable measures of sequencing quality, or only rough indicators.
 
+## first sanity check with BLAST
+
+To get a sense of what was in the sample is to use [ncbi nucleotide blast](https://blast.ncbi.nlm.nih.gov/Blast.cgi) to check for matches between the reads and sequences in the ncbi database.
+
+What do you get if you do this with a sequence from our dataset?
+
+In the [exploring reads notebook](scripts/exploring_reads.ipynb) you'll find some more exploration of the statistics of this set of reads.
+
 ## if you're bored...
 
 - how long is the reference genome?
