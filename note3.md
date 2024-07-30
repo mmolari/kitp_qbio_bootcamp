@@ -12,4 +12,4 @@ samtools index map.sorted.bam
 ```
 ___
 
-[$\leftarrow$ to the previous part](note2.md)
+$\leftarrow$ [previous part](note2.md)

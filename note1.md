@@ -38,4 +38,4 @@ Depending on the sequencing technology, these quality score can be fairly reliab
 
 ___
 
-$\rightarrow$ [to the next part](note2.md)
+$\rightarrow$ [next part](note2.md)

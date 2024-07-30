@@ -16,5 +16,5 @@ minimap2 -a -x map-ont bas54.fa reads.fq > map.sam
 
 ___
 
-[$\leftarrow$ to the previous part](note1.md) \
-[$\rightarrow$ to the next part](note3.md)
+$\leftarrow$ [previous part](note1.md) \
+$\rightarrow$ [next part](note3.md)
