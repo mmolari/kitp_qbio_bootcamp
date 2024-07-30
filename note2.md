@@ -61,9 +61,7 @@ Note that the samfile contains all the information from the fastq file and infor
 We won't go into the details of how the mapping and alignment is done algorithmically.
 Most programs initally generate an index of the reference genome (a structure that allows rapid look-up of the positions of kmers), find seeds in reads using the index, and do a local pairwise aligment.
 
-If you want to explore the sam file more, check out [this notebook](scripts/exploring_sam_file.ipynb).
-
-## if you're bored...
+## let's explore more!
 
 - what is the fraction of forward / reverse mappings?
 - how many secondary/supplementary alignments are there? Where do most supplementary alignments start/end?
@@ -72,6 +70,7 @@ If you want to explore the sam file more, check out [this notebook](scripts/expl
 - what are clipped sequences?
 - what is the distribution of in/del sizes?
 
+If you get stuck, here is a [notebook](scripts/exploring_sam_file.ipynb) with some results.
 ___
 
 $\leftarrow$ [previous part](note1.md) \

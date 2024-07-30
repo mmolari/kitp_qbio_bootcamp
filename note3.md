@@ -22,13 +22,24 @@ samtools index map.sorted.bam
 
 ## visualizing alignments with IGV
 
-To visualize the alignments, open IGV and load the reference genome and the sorted and indexed bam file. You can navigate the genome and zoom in/out to inspect the reads. You can also filter the reads by mapping quality, read length, etc.
+To visualize the alignments, open IGV and:
+- load the reads by selecting: File -> Load from File -> `map.sorted.bam`
+- load the reference genome: Genomes -> Load Genome from file -> `bas54.fa`
 
-## if you're bored...
+You can navigate the genome and zoom in/out to inspect the alignments.
+
+![igv](assets/igv_1.png)
+
+Each line is a different read alignment. You can occasionally see reads starting / ending.
+The first few things to notice is that we see many small insertions (purple) or deletions (blank gaps) in the reads. This is a common artifact of Nanopore sequencing technology.
+
+## let's explore more!
 
 - why is there a peak in the coverage pattern?
-- is there a region with a high number of mismatches? What could be the reason?
-- is there a region with many clipped reads?
+- Are there sites where many alignments begin/end?
+- where are most supplementary alignments?
+- some regions have higher number of mismatches, e.g. position 71,493. What could be the reason?
+- occasionally you find isolated clipped reads in the middle of the genome. These often have a supplementary alignment that starts at the clipped position but goes backward. Why can that be?
 ___
 
 $\leftarrow$ [previous part](note2.md)

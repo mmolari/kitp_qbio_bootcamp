@@ -32,18 +32,17 @@ Depending on the sequencing technology, these quality score can be fairly reliab
 
 To get a sense of what was in the sample is to use [ncbi nucleotide blast](https://blast.ncbi.nlm.nih.gov/Blast.cgi) to check for matches between the reads and sequences in the ncbi database.
 
-What do you get if you do this with a sequence from our dataset?
+- What do you get if you do this with a sequence from our dataset?
 
-In the [exploring reads notebook](scripts/exploring_reads.ipynb) you'll find some more exploration of the statistics of this set of reads.
-
-## if you're bored...
+## let's explore more!
 
 - how long is the reference genome?
-- how many reads does the file contain?
+- how many reads does the fastq file contains?
 - what is the distribution of read length?
-- what is the expected coverage if every read maps?
+- what would be the expected coverage if every read maps?
 - what is the distribution of read quality?
 
+Once you're done, you can compare your results with the [exploring reads notebook](scripts/exploring_reads.ipynb).
 ___
 
 $\rightarrow$ [next part](note2.md)
