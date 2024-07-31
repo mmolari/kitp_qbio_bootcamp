@@ -9,7 +9,14 @@ They cover the topic of aligning reads to a reference. We consider the example o
 
 ## setup
 
+Get the required software by:
+- installing `samtools` and `minimap2` using conda or mamba:
+    ```sh
+    conda create -n aln_env -c bioconda -c conda-forge minimap2 samtools
+    ```
+    remeber to activate the environment before using the tools!
+- download [IGV](https://igv.org/doc/desktop/#DownloadPage/).
+
 you should have in your folder:
 - the fast file `reads.fq` containing the reads
 - the reference sequence `bas54.fa`, corresponding to [phage Bas54](https://www.ncbi.nlm.nih.gov/nuccore/2071745857) from the Basel collection.
-- the commands `minimap2` and `samtools` available in your path and a working installation of [IGV](https://igv.org/doc/desktop/#DownloadPage/)
