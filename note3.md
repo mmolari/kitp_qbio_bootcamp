@@ -24,7 +24,7 @@ samtools index map.sorted.bam
 
 To visualize the alignments, open IGV and:
 - load the reads by selecting: File -> Load from File -> `map.sorted.bam`
-- load the reference genome: Genomes -> Load Genome from file -> `bas54.fa`
+- load the reference genome: Genomes -> Load Genome from file -> `bas54.fa` (or `bas54.gbk` to also have gene annotations)
 
 You can navigate the genome and zoom in/out to inspect the alignments.
 
