@@ -47,14 +47,14 @@ This is a tab-separated format. Let's break it down in some relevant fields:
 | 1   | `4b9d52af-2178-4e3c-82c5-f0cec1b173ce` | read id                                                                       |
 | 2   | `16` ( = `b000010000000`)              | [bit-packed flag](https://broadinstitute.github.io/picard/explain-flags.html) |
 | 3   | `MZ501093.1`                           | reference id                                                                  |
-| 4   | `20014`                                | read length                                                                   |
+| 4   | `20014`                                | mapping start position                                                        |
 | 5   | `60`                                   | read mapping quality                                                          |
 | 6   | `5S 155M 1I 83M 1I 39M 1D 61M ...`     | [CIGAR string](https://jef.works/blog/2017/03/28/CIGAR-strings-for-dummies/)  |
 | ... | ...                                    | ...                                                                           |
 | 10  | `CTAGAAGCAAGAATGTATTTGCTCATGA...`      | read sequence                                                                 |
 | 11  | `%%&&)*)(+'%%%%%&%&&&'('(-..`          | read quality score                                                            |
 
-The first entry is the read ID, the second is a [complicated flag with various information on the mapping](https://broadinstitute.github.io/picard/explain-flags.html), the third is the reference sequence id. Then comes the mapping position (base 20014). The fifth is the so called [CIGAR string](https://jef.works/blog/2017/03/28/CIGAR-strings-for-dummies/) that specifies the aligment to the reference sequence. In this case, after 6 soft-clipped bases, it specifies a 155 base match (155M), a one base insertion (1I), and another 83 base match (83M) etc. Fields 10 and 11 contain the sequence and the quality score.
+The first entry is the read ID, the second is a [complicated flag with various information on the mapping](https://broadinstitute.github.io/picard/explain-flags.html), the third is the reference sequence id. Then comes the mapping start position on the reference (base 20014). The fifth is the so called [CIGAR string](https://jef.works/blog/2017/03/28/CIGAR-strings-for-dummies/) that specifies the aligment to the reference sequence. In this case, after 6 soft-clipped bases, it specifies a 155 base match (155M), a one base insertion (1I), and another 83 base match (83M) etc. Fields 10 and 11 contain the sequence and the quality score.
 The full format specification can be found [here](https://samtools.github.io/hts-specs/SAMv1.pdf)
 Note that the samfile contains all the information from the fastq file and information on where the read mapped.
 
