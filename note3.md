@@ -38,7 +38,8 @@ The first few things to notice is that we see many small insertions (purple) or 
 - why is there a peak in the coverage pattern?
 - Are there sites where many alignments begin/end?
 - where are most supplementary alignments?
-- some regions have higher number of mismatches, e.g. position 71,493. What could be the reason?
+- some regions have higher number of mismatches, e.g. position 71'493. What could be the reason?
+- why are there so many gaps around position 82'045?
 - occasionally you find isolated clipped reads in the middle of the genome. These often have a supplementary alignment that starts at the clipped position but goes backward. Why can that be?
 ___
 

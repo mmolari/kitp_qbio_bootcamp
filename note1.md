@@ -36,7 +36,6 @@ To get a sense of what was in the sample is to use [ncbi nucleotide blast](https
 
 ## let's explore more!
 
-- how long is the reference genome?
 - how many reads does the fastq file contains?
 - what is the distribution of read length?
 - what would be the expected coverage if every read maps?
